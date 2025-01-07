@@ -11,7 +11,7 @@ on:
         default: "10"
       saveLocalCopy:
         type: boolean
-        default: false
+        default: true
   schedule:
     - cron: '0 */4 * * *'
 
