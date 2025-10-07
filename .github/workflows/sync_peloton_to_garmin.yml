@@ -55,7 +55,12 @@ jobs:
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
-            "ExcludeWorkoutTypes": [ "Running", "Walking", "Treadmill Running", "Outdoor Running", "Treadmill Walking", "Outdoor Walking" ],
+            "ExcludeWorkoutTypes":
+              - TreadmillWalking
+              - TreadmillRunning
+              - OutdoorWalking
+              - OutdoorRunning
+            
           },
           "Garmin": {
             "Upload": true,
@@ -94,6 +99,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
