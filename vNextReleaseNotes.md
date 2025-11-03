@@ -6,23 +6,27 @@
 
 ## Fixes
 
-- [#746] Fix permissions issue on v5 where the GitHub Action was failing to run
+- [#795] Temporarily fixes Peloton API error
+
+## Features
+
+- [#795] Add ability to provide Peloton Session Id via config file (@eRaid6)
 
 ## Docker Tags
 
 - Console
     - `console-stable`
     - `console-latest`
-    - `console-v5.0.1`
+    - `console-v5.1.0`
     - `console-v5`
 
 - Api
     - `api-stable`
     - `api-latest`
-    - `api-v5.0.1`
+    - `api-v5.1.0`
     - `api-v5`
 - WebUI
     - `webui-stable`
     - `webui-latest`
-    - `webui-v5.0.1`
+    - `webui-v5.1.0`
     - `webui-v5`
